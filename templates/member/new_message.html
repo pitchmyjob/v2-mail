@@ -1,0 +1,362 @@
+{% extends "layout.html" %}
+
+
+{% block head %}
+
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table600" style="table-layout: fixed;">
+        <tbody><tr>
+            <td width="20"></td>
+            <td>
+                <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#e1e2e4" width="600" align="center" style="margin:0 auto;padding-top:10px;">
+                    <tbody><tr>
+                        <td bgcolor="#e1e2e4" style="padding-top:10px;text-align:center;font-family:arial;line-height:12px;font-size:11px;color:#767676;"><a href=""  style="color:#767676;text-decoration:none" target="_blank"> Voir le message du recruteur</a> </td>
+                    </tr>
+                </tbody></table>
+            </td>
+            <td width="20"></td>
+        </tr>
+    </tbody></table>
+
+{% endblock %}
+
+{% block content %}
+
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td align="center" style="text-align:center;">
+                        <a href="{{ obj.lien }}" style="color:#454f59;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;text-decoration:none;font-size:18px;" title="Voir le message du recruteur" alias="Voir le message1" target="_blank">
+                            {{ obj.receiver.name }}
+                        </a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="3" style="font-size: 3px; line-height: 3px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td align="center" style="text-align:center;">
+                        <a href="{{ obj.lien }}" style="color:#00a19c;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;text-decoration:none;font-size:16px;" title="Voir le message du recruteur" alias="Voir le message1" target="_blank">
+                            vous avez reçu un message d'un recruteur
+                        </a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="1" style="font-size: 1px; line-height: 1px;background:#e1e5e6;" bgcolor="#e1e5e6"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td width="20"></td>
+                    <td>
+                        <a href="{{ obj.lien }}" style="color:#454f59;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-weight:bold;text-decoration:none;font-size:16px;" title="Voir le message du recruteur" alias="Voir le message1" target="_blank">
+                            <span style="font-weight:bold;">Objet : </span> Nouveau message
+                        </a>
+                    </td>
+                    <td width="20"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="7" style="font-size: 7px; line-height: 7px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="13" style="font-size: 13px; line-height: 13px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td width="20"></td>
+                    <td width="20">
+                        <a href="" style="" title="Voir le profil" alias="Voir le profil" target="_blank">
+                            <img src="{{ obj.sender.image }}" width="20" height="20">
+                        </a>
+                    </td>
+                    <td width="10"></td>
+                    <td>
+                        <a href="" style="color:#454f59;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;text-decoration:none;font-size:12px;" title="Voir le profil" alias="Voir le profil" target="_blank">
+                            <span style="color:#00a2db;">{{ obj.sender.name }}</span> {{ obj.sender.poste }}- <span style="color:#87868c;">{{ obj.sender.company }}</span>
+                        </a>
+                    </td>
+                    <td width="20"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="10" style="font-size: 10px; line-height: 10px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td width="30"></td>
+                    <td width="20" valign="top">
+                        <a href="" title="Voir le message " style="" alias="Voir le message2" target="_blank">
+                            <img src="https://email-pitchmyjob.s3-eu-west-1.amazonaws.com/images/open_double_quote_recruiter.png">
+                        </a>
+                    </td>
+                    <td width="15"></td>
+                    <td style="color:#454f59;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;text-decoration:none;font-size:14px;">
+                        {% autoescape false %}
+                            {{ obj.message|safe  }}
+                        {% endautoescape %}
+
+                    </td>
+                    <td width="30"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td width="20"></td>
+                    <td width="50" height="1" style="font-size: 1px; line-height: 1px;background:white;" bgcolor="white"></td>
+                    <td></td>
+                    <td width="20"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="10" style="font-size: 10px; line-height: 10px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#ffffff" width="600" align="center" style="margin:0 auto">
+                <tbody><tr>
+                    <td width="30"> </td>
+                    <td style="text-align:center;">
+                        <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="table-layout: fixed;margin:0 auto;" align="center">
+                            <tbody><tr>
+                                <td bgcolor="#f07355" style="background:#f07355;height:35px;border-radius:20px;padding:0 30px;" height="35" class="cta-resp-padding">
+                                    <a href="{{ obj.lien }}" title="Répondre" alias="Répondre" target="_blank" style="text-decoration:none;color:#ffffff;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;" class="cta-resp-font">
+                                        Répondre
+                                    </a>
+                                </td>
+
+                            </tr>
+                        </tbody></table>
+                    </td>
+                    <td width="30"> </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" width="600" align="center" style="margin:0 auto;table-layout: fixed;" bgcolor="#ffffff">
+                <tbody><tr>
+                    <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" bgcolor="#e1e2e4" width="100%" align="center" class="table320" style="table-layout: fixed;">
+    <tbody><tr>
+        <td>
+            <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#f6f7f9" width="600" align="center" style="margin:0 auto">
+                <tbody><tr>
+                    <td>
+                        <table cellpadding="0" cellspacing="0" bgcolor="#f6f7f9" align="center" style="margin:0 auto;width:100%;padding:0 20px;" class="table320">
+                            <tbody><tr>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                            </tr>
+                            <tr>
+                                <td width="20"></td>
+                                <td width="70" valign="top">
+                                    <a href="" title="Répondre" alias="Répondre" target="_blank" style="width:70px;">
+                                        <img alt="Répondre aux freelances" src="https://email-pitchmyjob.s3-eu-west-1.amazonaws.com/images/freelance_lightbulb_6.png" style="width:70px;display:block;" width="70">
+                                    </a>
+                                </td>
+                                <td width="10"></td>
+                                <td valign="middle">
+                                    <table cellpadding="0" cellspacing="0" bgcolor="#f6f7f9" align="center" style="margin:0 auto;width:100%;">
+                                        <tbody><tr>
+                                            <td>
+                                                <a href="" title="Répondre" alias="Répondre" target="_blank" style="font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:14px;font-weight:bold;color:#00A19C;text-decoration:none;">
+                                                    Votre réponse est importante
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td height="10" style="font-size: 10px; line-height: 10px;"></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:14px;color:#454f59;">
+                                                <a href="" title="Répondre" alias="Répondre" target="_blank" style="font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:12px;color:#454f59;text-decoration:none;">
+                                                    Une réponse positive ou négative est essentielle. Elle permet d'aider les recruteurs et de vous proposer des offres plus pertinentes.
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody></table>
+                                </td>
+                                <td width="20"></td>
+                            </tr>
+                            <tr>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                                <td height="20" style="font-size: 20px; line-height: 20px;"></td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+</tbody></table>
+
+
+{% endblock %}
