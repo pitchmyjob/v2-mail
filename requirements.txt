@@ -1,0 +1,11 @@
+Flask==0.11.1
+itsdangerous==0.24
+Werkzeug==0.11.11
+Jinja2==2.8
+click==6.6
+MarkupSafe==0.23
+awscli==1.11.13
+boto3==1.4.1
+Flask-Mail==0.9.1
+blinker==1.4
+Flask-WTF==0.13.1
