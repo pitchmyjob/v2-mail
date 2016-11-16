@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
 from flask_wtf import FlaskForm
-from wtforms import Form, StringField
+from wtforms import Form, StringField, IntegerField
 from wtforms.validators import DataRequired
 from flask_wtf.file import FileField
 from werkzeug.utils import secure_filename
@@ -41,6 +41,7 @@ class FormEmail(FlaskForm):
     url_file = StringField("url_file",)
     name_file = StringField("name_file")
     type_file = StringField("type_file")
+    secure   = IntegerField("secure")
 
 
 class Emailing():
@@ -64,6 +65,7 @@ class Emailing():
         self.field['template']     = form.template.data if form.template.data else "default.html"
         self.field['file']         = form.file.data
         self.field['url_file']     = form.url_file.data if form.url_file.data else None
+        self.field['secure']       = form.secure.data if form.secure.data else 1
 
 
     def save_pre_send(self):
@@ -89,12 +91,19 @@ class Emailing():
 
     def check_email(self, obj):
         dt = datetime.datetime.now()
+
+        if self.field['secure'] == 1 :
+            condition = Attr('sent').eq(1) & Attr('date_sent').eq(str(dt.date())) & Attr('time.hour').eq(dt.time().strftime("%H") ) & Attr('subject').eq(self.field['subject'])
+
+        if self.field['secure'] == 2 :
+            condition = Attr('sent').eq(1) & Attr('date_sent').eq(str(dt.date())) & Attr('subject').eq(self.field['subject'])
+
         response = self.table.query(
             KeyConditionExpression=Key('email').eq(obj['email']),
-            FilterExpression=Attr('sent').eq(1) & Attr('date_sent').eq(str(dt.date())) & Attr('time.hour').eq(dt.time().strftime("%H") ) & Attr('subject').eq(self.field['subject'])
+            FilterExpression=condition
         )
 
-        if response['Count'] < 2 or obj['email'] == "tannier.yannis@gmail.com" :
+        if response['Count'] < 1 or obj['email'] == "tannier.yannis@gmail.com" :
             return True
         else :
             return False
@@ -162,7 +171,7 @@ def email():
 
 @application.route('/')
 def home():
-    return "mail pitchmyjob"
+    return ""
 
 
 # run the app.
