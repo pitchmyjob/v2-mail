@@ -165,29 +165,6 @@ def home():
     return "mail pitchmyjob"
 
 
-@application.route('/test')
-def test():
-    msg = Message("Test",
-                  sender="contact@pitchmyjob.com",
-                  recipients=["tannier.yannis@gmail.com"])
-    ctx = {
-        "name": "Yannis",
-        "job" : "Designer UX/UI",
-        "image" : "https://www.pitchmyjob.com/media/c2v/4045/4045.jpg.50x50_q85_crop-smart.jpg",
-        "users" : [
-            {"name" : "Tannier Yannis", "image" : "https://www.pitchmyjob.com/media/c2v/4058/4058.jpg", "poste" : "Co-fondateur & CTO", "lieu" : "Paris, France"},
-            {"name" : "Martial Dahan", "image" : "https://www.pitchmyjob.com/media/c2v/4058/4058.jpg", "poste" : "Co Fondateur et MACHINASS", "lieu" : "Paris, France"}
-        ],
-        "sender" : { "name" : "Martial Dahan", "image" : "https://www.pitchmyjob.com/media/c2v/4058/4058.jpg", "poste" : "Co-Fondateur", "company" : "Pitchmyjob"},
-        "receiver" : { "name" : "Tannier Yannis"},
-        "message" : " blabla bla  sdfsdf sdf sd fsd fdsfdsf sdf</br> blablabla </br> sdffsdfsdfsd"
-    }
-
-    msg.html = render_template("member/visite_profil.html", obj=ctx)
-    mail.send(msg)
-    return "mail pitchmyjob"
-
-
 # run the app.
 if __name__ == "__main__":
     if "dev" in sys.argv :
