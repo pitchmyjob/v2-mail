@@ -1,1 +1,87 @@
-salut 
+{% extends "layout.html" %}
+
+{% block content %}
+        <table cellpadding="0" cellspacing="0" bgcolor="#e0e2e4" width="100%" align="center" style="table-layout: fixed;">
+            <tbody><tr>
+                <td>
+                    <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#53c1af" width="600" align="center" style="margin:0 auto;">
+                        <tbody><tr>
+                            <td width="50"></td>
+                            <td align="center" style="padding:10px 0;">
+                                <table cellpadding="0" cellspacing="0" bgcolor="#53c1af" align="center" style="margin:0 auto">
+                                    <tbody><tr>
+                                        <td width="42">
+                                            <img src="https://email-pitchmyjob.s3-eu-west-1.amazonaws.com/images/onboarding_cp_clock2.png" style="display:block;width:42px;">
+                                        </td>
+                                        <td width="20"></td>
+                                        <td style="font-size:16px;color:white;font-family:'Arial', sans serif;font-weight:bold;">
+                                            {{ obj.title }}
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                            <td width="50"></td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <table cellpadding="0" cellspacing="0" bgcolor="#e0e2e4" width="100%" align="center" style="table-layout: fixed;">
+            <tbody><tr>
+                <td>
+                    <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#ffffff" width="600" align="center" style="margin:0 auto">
+                        <tbody><tr>
+                            <td height="25" style="font-size: 25px; line-height: 25px;"></td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+        <table cellpadding="0" cellspacing="0" bgcolor="#e0e2e4" width="100%" align="center" style="table-layout: fixed;">
+            <tbody><tr>
+                <td>
+                    <table cellpadding="0" class="table320" cellspacing="0" bgcolor="#ffffff" width="600" align="center" style="margin:0 auto">
+                        <tbody><tr>
+                            <td>
+                                <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center" style="margin:0 auto">
+                                    <tbody><tr>
+                                        <td width="40"></td>
+                                        <td>
+                                            <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center" style="margin:0 auto;">
+                                                <tbody><tr>
+                                                    <td style="font-size:14px;color:#4a494d;font-family:'Arial', sans serif;text-align:center;line-height:24px;" align="center" valign="top">
+                                                        {{ obj.text }}
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td height="15" style="font-size: 15px; line-height: 15px;"></td>
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                        <td width="20"></td>
+                                    </tr>
+                                    <tr>
+                                        <td width="20"></td>
+                                        <td style="padding-bottom:10px;">
+                                            <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center">
+                                                <tbody><tr>
+                                                    <td style="border-radius:20px;margin-bottom:10px;" bgcolor="#f07355">
+                                                        <a href="https://www.pitchmyjob.com/fr/" target="_blank" style="text-decoration:none;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;color:white;font-size:16px;display:block;padding:6px 15px;border-radius:20px;border:1px solid #f07355;margin:0 auto;text-align:center;">
+                                                            {{ obj.button }}
+                                                        </a>
+                                                    </td>
+
+                                                </tr>
+                                            </tbody></table>
+                                        </td>
+                                        <td width="40"></td>
+                                    </tr>
+                                </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                </td>
+            </tr>
+        </tbody></table>
+{% endblock %}
+
