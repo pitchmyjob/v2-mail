@@ -18,17 +18,17 @@ import uuid
 # EB looks for an 'application' callable by default.
 application = Flask(__name__)
 
-#application.config['MAIL_SERVER'] = 'email-smtp.eu-west-1.amazonaws.com'
-#application.config['MAIL_PORT'] = 587
-#application.config['MAIL_USERNAME'] = 'AKIAIQHHLEEWNNUS2SRA'
-#application.config['MAIL_PASSWORD'] = 'Ah4PYxyZLHkJFBNU+APGgvFkWHMGQvutaukZ4nRNTWzu'
-#application.config['MAIL_USE_TLS'] = True
+application.config['MAIL_SERVER'] = 'email-smtp.eu-west-1.amazonaws.com'
+application.config['MAIL_PORT'] = 587
+application.config['MAIL_USERNAME'] = 'AKIAIQHHLEEWNNUS2SRA'
+application.config['MAIL_PASSWORD'] = 'Ah4PYxyZLHkJFBNU+APGgvFkWHMGQvutaukZ4nRNTWzu'
+application.config['MAIL_USE_TLS'] = True
 
-application.config['MAIL_SERVER'] = 'in-v3.mailjet.com'
-application.config['MAIL_PORT'] = 25
-application.config['MAIL_USERNAME'] = '716554e44256731439609ad75c0c64eb'
-application.config['MAIL_PASSWORD'] = '4fe406245518835c398c0e8bf8f74209'
-application.config['MAIL_USE_TLS'] = False
+#application.config['MAIL_SERVER'] = 'in-v3.mailjet.com'
+#application.config['MAIL_PORT'] = 25
+#application.config['MAIL_USERNAME'] = '716554e44256731439609ad75c0c64eb'
+#application.config['MAIL_PASSWORD'] = '4fe406245518835c398c0e8bf8f74209'
+#application.config['MAIL_USE_TLS'] = False
 
 application.config['WTF_CSRF_ENABLED'] = False
 application.config['WTF_CSRF_SECRET_KEY'] = "xxxxxx"
