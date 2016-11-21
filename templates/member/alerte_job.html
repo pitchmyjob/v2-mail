@@ -67,7 +67,11 @@
 								<td align="center">
 									<center>
 										<a href="https://www.pitchmyjob.com/fr/annonces" title="Découvrir les nouvelles offres" style="color:#4b4b4d;text-decoration:none;font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;font-size:16px;text-align:center;" target="_blank" alias="Découvrir les nouvelles offres">
-											<span style="color:#87868c;font-weight:bold;font-family: Arial,Helvetica Neue,Helvetica,sans-serif;"> {{ obj.total }} nouvelles offres </span> peuvent te correspondent </a><a>
+											{% if  obj.total == 1%}
+												<span style="color:#87868c;font-weight:bold;font-family: Arial,Helvetica Neue,Helvetica,sans-serif;"> une nouvelle offre </span> peut te correspondre </a><a>
+											{% else %}
+												<span style="color:#87868c;font-weight:bold;font-family: Arial,Helvetica Neue,Helvetica,sans-serif;"> {{ obj.total }} nouvelles offres </span> peuvent te correspondre </a><a>
+											{% endif %}
 										</a>
 									</center>
 								</td>
