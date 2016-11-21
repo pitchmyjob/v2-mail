@@ -50,7 +50,10 @@
                                             <table cellpadding="0" cellspacing="0" bgcolor="#ffffff" align="center" style="margin:0 auto;">
                                                 <tbody><tr>
                                                     <td style="font-size:14px;color:#4a494d;font-family:'Arial', sans serif;text-align:center;line-height:24px;" align="center" valign="top">
-                                                        {{ obj.text }}
+                                                      
+                                                                {% autoescape false %}
+                                                                    {{ obj.text|safe  }}
+                                                                {% endautoescape %}
                                                     </td>
                                                 </tr>
                                                 <tr>
